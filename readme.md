@@ -28,6 +28,10 @@ robot -d ./logs api/tests/getUserTest.robot
 robot -d ./logs api/tests/getIssureTest.robot
 ```
 
+```bash
+robot -d ./logs -i reactions api/tests/postReactionTest.robot
+```
+
 3. Access on project '.logs/report.html' and open Chrome browser to see results.
 
 

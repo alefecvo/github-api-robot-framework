@@ -11,7 +11,7 @@ ${ALIAS}                   github
 
 *** Keywords ***
 Create session github autenticated
-    ${HEADERS}        Create Dictionary        Authorization=Bearer ${TOKEN}
+    ${HEADERS}        Create Dictionary        Authorization=Bearer ${TOKEN}        disable_warnings=True
     Create Session                    ${ALIAS}     ${BASE_URL}    ${HEADERS}
 
 Create session github not autenticated
